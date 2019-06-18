@@ -1,6 +1,6 @@
 # react-next
 
-react next 服务端渲染
+react next 服务端渲染  https://nextjs.frontendx.cn/docs
 
 # 初始化项目
 
