@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Head from "../components/head";
+import Router from 'next/router';
 
 class Films extends Component {
     static async getInitialProps() {
@@ -14,16 +16,23 @@ class Films extends Component {
     }
     render() { 
         return (  
+            <Head>
             <ul>
                 {
                     this.props.films.map(item => {
-                        return <li key={item.filmId}>{item.name}
+                        return <li key={item.filmId} onClick={() => Router.push({
+                            pathname: '/detail',
+                            query: {
+                                id:item.filmId
+                            }
+                        })}>{item.name}
                             <img src={item.poster} />
                         </li>
                     })
                 }
                 
-            </ul>
+                </ul>
+                </Head>
         );
     }
 }
