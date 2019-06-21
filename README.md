@@ -56,3 +56,13 @@ react next 服务端渲染  https://nextjs.frontendx.cn/docs
     }
 
     6.内联样式   https://nextjs.frontendx.cn/docs/#%E6%94%AF%E6%8C%81%E5%B5%8C%E5%85%A5%E6%A0%B7%E5%BC%8F
+
+
+# 使用redux
+
+新建项目 运行命令 yarn create next-app --example with-redux 项目名称
+
+
+# 部署
+1. yarn build
+2. yarn start
